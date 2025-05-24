@@ -1,53 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   AMateria.cpp                                       :+:      :+:    :+:   */
+/*   Ice.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/24 14:55:30 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/24 17:27:15 by abarahho         ###   ########.fr       */
+/*   Created: 2025/05/24 15:20:19 by abarahho          #+#    #+#             */
+/*   Updated: 2025/05/24 15:23:26 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "AMateria.hpp"
+#include "Ice.hpp"
 #include "ICharacter.hpp"
 
-AMateria::AMateria()
+Ice::Ice()
 {
-	std::cout << "AMateria constructor" << std::endl;
+	std::cout << "Ice constructor" << std::endl;
 }
 
-AMateria::AMateria(AMateria const &src)
-{
-	this->type = src.getType();
-}
-
-AMateria::AMateria(std::string const & type)
+Ice::Ice(std::string const & type)
 {
 	this->type = type;
 }
 
-AMateria& AMateria::operator=(AMateria const &src)
+Ice& Ice::operator=(Ice const &src)
 {
 	if (this != &src)
-	{
 		this->type = src.getType();
-	}
 	return (*this);
 }
 
-std::string const & AMateria::getType() const
+std::string const & Ice::getType() const
 {
 	return (this->type);
 }
 
-void	AMateria::use(ICharacter& target)
+void	Ice::use(ICharacter& target)
 {
-	
+	std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
 }
 
-AMateria::~AMateria()
+Ice::~Ice()
 {
-	std::cout << "AMateria destructor" << std::endl;
+	std::cout << "Ice destructor" << std::endl;
 }

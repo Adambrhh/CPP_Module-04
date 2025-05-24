@@ -1,53 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   AMateria.cpp                                       :+:      :+:    :+:   */
+/*   Cure.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/24 14:55:30 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/24 17:27:15 by abarahho         ###   ########.fr       */
+/*   Created: 2025/05/24 15:18:07 by abarahho          #+#    #+#             */
+/*   Updated: 2025/05/24 15:24:01 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "AMateria.hpp"
+#include "Cure.hpp"
 #include "ICharacter.hpp"
 
-AMateria::AMateria()
+Cure::Cure()
 {
-	std::cout << "AMateria constructor" << std::endl;
+	std::cout << "Cure constructor" << std::endl;
 }
 
-AMateria::AMateria(AMateria const &src)
-{
-	this->type = src.getType();
-}
-
-AMateria::AMateria(std::string const & type)
+Cure::Cure(std::string const & type)
 {
 	this->type = type;
 }
 
-AMateria& AMateria::operator=(AMateria const &src)
+Cure& Cure::operator=(Cure const &src)
 {
 	if (this != &src)
-	{
 		this->type = src.getType();
-	}
 	return (*this);
 }
 
-std::string const & AMateria::getType() const
+std::string const & Cure::getType() const
 {
 	return (this->type);
 }
 
-void	AMateria::use(ICharacter& target)
+void	Cure::use(ICharacter& target)
 {
-	
+	std::cout << "* heals " << target.getName() << "’s wounds *" << std::endl;
 }
 
-AMateria::~AMateria()
+Cure::~Cure()
 {
-	std::cout << "AMateria destructor" << std::endl;
+	std::cout << "Cure destructor" << std::endl;
 }
