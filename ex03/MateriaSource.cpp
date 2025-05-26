@@ -6,11 +6,12 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 16:35:22 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/26 11:20:20 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/26 14:04:38 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "MateriaSource.hpp"
+#include "AMateria.hpp"
 
 MateriaSource::MateriaSource()
 {

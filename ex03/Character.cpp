@@ -6,11 +6,12 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 16:43:46 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/26 11:19:50 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/26 14:03:53 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
+#include "AMateria.hpp"
 
 Character::Character()
 {

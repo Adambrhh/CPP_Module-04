@@ -6,7 +6,7 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 16:43:44 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/26 10:15:54 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/26 14:04:08 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 # include "ICharacter.hpp"
 # include <iostream>
-# include "AMateria.hpp"
 
+class AMateria;
 class Character : public ICharacter
 {
 private:

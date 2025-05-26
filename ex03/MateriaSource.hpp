@@ -6,7 +6,7 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 16:35:19 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/26 10:56:32 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/26 14:04:56 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 # include <iostream>
 # include "IMateriaSource.hpp"
-# include "AMateria.hpp"
 
+class IMateria;
 class MateriaSource : public IMateriaSource
 {
 private:
