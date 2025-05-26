@@ -1,13 +1,13 @@
 NAME = Polymorphism.03
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 
 SRCS =	main.cpp \
 		AMateria.cpp \
-		ICharactere.cpp \
-		IMateriaSource.cpp \
+		Cure.cpp \
 		Ice.cpp \
-		Cure.cpp
+		Character.cpp \
+		MateriaSource.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)

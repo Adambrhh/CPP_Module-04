@@ -13,9 +13,14 @@
 #include "Cure.hpp"
 #include "ICharacter.hpp"
 
-Cure::Cure()
+Cure::Cure() : AMateria("cure")
 {
 	std::cout << "Cure constructor" << std::endl;
+}
+
+Cure::Cure(Cure const &src) : AMateria (src)
+{
+	std::cout << "Cure copy constructor" << std::endl;
 }
 
 Cure::Cure(std::string const & type)
@@ -38,6 +43,11 @@ std::string const & Cure::getType() const
 void	Cure::use(ICharacter& target)
 {
 	std::cout << "* heals " << target.getName() << "’s wounds *" << std::endl;
+}
+
+Cure *Cure::clone() const
+{
+	return (new Cure(*this));
 }
 
 Cure::~Cure()

@@ -6,7 +6,7 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 17:44:01 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/24 15:52:35 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/26 08:41:11 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define IMATERIASOURCE_HPP
 
 # include <iostream>
+
+class AMateria;
 
 class IMateriaSource
 {

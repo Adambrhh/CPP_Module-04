@@ -6,13 +6,15 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 17:33:23 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/24 16:42:41 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/26 10:14:09 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "MateriaSource.hpp"
+#include "Character.hpp"
 #include "ICharacter.hpp"
-#include "AMateria.hpp"
+#include "Ice.hpp"
+#include "Cure.hpp"
 
 int main()
 {

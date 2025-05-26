@@ -6,24 +6,25 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 16:43:44 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/24 17:12:07 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/26 10:15:54 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CHARACTER_HPP
 # define CHARACTER_HPP
 
+# include "ICharacter.hpp"
 # include <iostream>
+# include "AMateria.hpp"
 
-class AMateria;
-class ICharacter;
-
-class Character
+class Character : public ICharacter
 {
 private:
 	std::string	name;
+	AMateria	*inventory[4];
 public:
 	Character();
+	Character(std::string const &name);
 	Character(Character const &src);
 	Character& operator=(Character const &src);
 	~Character();

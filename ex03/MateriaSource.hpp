@@ -6,7 +6,7 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 16:35:19 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/24 17:01:01 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/26 10:56:32 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,19 @@
 
 # include <iostream>
 # include "IMateriaSource.hpp"
-
-class AMateria;
+# include "AMateria.hpp"
 
 class MateriaSource : public IMateriaSource
 {
-	public:
+private:
+	AMateria* inventory[4];
+public:
 	MateriaSource();
 	MateriaSource(MateriaSource const &src);
 	MateriaSource& operator=(MateriaSource const &src);
 	~MateriaSource();
-	void		learnMateria(AMateria*);
+
+	void		learnMateria(AMateria *src);
 	AMateria*	createMateria(std::string const & type);
 };
 

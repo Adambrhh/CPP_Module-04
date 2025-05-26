@@ -6,7 +6,7 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 15:18:09 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/24 17:33:29 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/26 07:45:00 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 
 class Cure : public AMateria
 {
-protected:
-	std::string type;
 public:
 	Cure();
 	Cure(Cure const &src);

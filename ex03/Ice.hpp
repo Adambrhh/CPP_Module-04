@@ -6,7 +6,7 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 15:19:52 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/24 17:33:34 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/26 07:48:03 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ class ICharactere;
 
 class Ice : public AMateria
 {
-protected:
-	std::string type;
 public:
 	Ice();
 	Ice(Ice const &src);
@@ -30,7 +28,7 @@ public:
 	~Ice();
 	std::string const & getType() const;
 	Ice* clone() const;
-	void use(ICharactere& target);
+	void use(ICharacter& target);
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 14:55:30 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/24 17:27:15 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/26 11:19:32 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,9 @@ std::string const & AMateria::getType() const
 	return (this->type);
 }
 
-void	AMateria::use(ICharacter& target)
+void AMateria::use(ICharacter& target)
 {
-	
+	std::cout << "* uses a generic Materia on " << target.getName() << " *" << std::endl;
 }
 
 AMateria::~AMateria()
