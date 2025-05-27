@@ -6,7 +6,7 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 16:35:19 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/26 14:04:56 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/26 14:14:43 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ public:
 	MateriaSource(MateriaSource const &src);
 	MateriaSource& operator=(MateriaSource const &src);
 	~MateriaSource();
-
 	void		learnMateria(AMateria *src);
 	AMateria*	createMateria(std::string const & type);
 };

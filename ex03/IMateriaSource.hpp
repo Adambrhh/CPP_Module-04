@@ -6,7 +6,7 @@
 /*   By: abarahho <abarahho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 17:44:01 by abarahho          #+#    #+#             */
-/*   Updated: 2025/05/26 08:41:11 by abarahho         ###   ########.fr       */
+/*   Updated: 2025/05/27 13:35:11 by abarahho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class AMateria;
 class IMateriaSource
 {
 	public:
-	virtual ~IMateriaSource() {}
+	virtual ~IMateriaSource() {};
 	virtual void learnMateria(AMateria*) = 0;
 	virtual AMateria* createMateria(std::string const & type) = 0;
 };
